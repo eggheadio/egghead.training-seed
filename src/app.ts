@@ -1,17 +1,7 @@
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
-import {bootstrap} from '@angular/platform-browser-dynamic';
-import {provide, enableProdMode} from '@angular/core';
-import {HTTP_PROVIDERS} from '@angular/http';
-import {ROUTER_PROVIDERS} from '@angular/router';
+import {Observable} from 'rxjs/Rx';
+import * as $ from 'jquery';
 
-import {SeedApp} from './app/seed-app';
+const body = $(document.body);
 
-
-// enableProdMode()
-
-bootstrap(SeedApp, [
-  HTTP_PROVIDERS,
-  ROUTER_PROVIDERS,
-  provide(LocationStrategy, {useClass: HashLocationStrategy})
-])
-.catch(err => console.error(err));
+Observable.interval(1000)
+  .subscribe(count => body.html(`<div>${count}</div>`);

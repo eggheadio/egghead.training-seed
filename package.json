@@ -1,18 +1,15 @@
 {
-  "name": "angular2-seed",
+  "name": "egghead.training-seed",
   "version": "1.0.0",
-  "description": "A simple starter Angular2 project",
+  "description": "The Egghead.io Training Seed",
   "scripts": {
-    "typings-install": "typings install",
-    "postinstall": "npm run typings-install",
+    "postinstall": "typings install",
     "build": "webpack --inline --colors --progress --display-error-details --display-cached",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
     "start": "npm run server"
   },
   "contributors": [
-    "Rob Wormald <robwormald@gmail.com>",
-    "PatrickJS <github@gdi2290.com>"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -28,30 +25,19 @@
     "webpack-merge": "^0.8.4"
   },
   "dependencies": {
-    "@angular/http": "2.0.0-rc.1",
-    "@angular/common": "2.0.0-rc.1",
-    "@angular/compiler": "2.0.0-rc.1",
-    "@angular/core": "2.0.0-rc.1",
-    "@angular/platform-browser": "2.0.0-rc.1",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
-    "@angular/platform-server": "2.0.0-rc.1",
-    "@angular/router": "2.0.0-rc.1",
-    "core-js": "^2.2.0",
-    "rxjs": "5.0.0-beta.6",
-    "zone.js": "~0.6.12"
+    "jquery": "*",
+    "rxjs": "*",
+    "typings": "*"
   },
   "keywords": [
-    "Angular2",
-    "angular2-seed",
-    "official angular 2 seed",
-    "official angular2 seed"
+
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular2-seed.git"
+    "url": "git+https://github.com/eggheadio/egghead.training-seed.git"
   },
   "bugs": {
-    "url": "https://github.com/angular/angular2-seed/issues"
+    "url": "https://github.com/eggheadio/egghead.training-seed/issues"
   },
-  "homepage": "https://github.com/angular/angular2-seed#readme"
+  "homepage": "https://github.com/eggheadio/egghead.training-seed#readme"
 }
