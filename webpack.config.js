@@ -50,6 +50,12 @@ var defaultConfig = {
     ]
   },
 
+  
+  resolve: {
+    root: [ path.join(__dirname, 'src') ],
+    extensions: ['', '.ts', '.js']
+  },
+
   devServer: {
     historyApiFallback: true,
     watchOptions: { aggregateTimeout: 300, poll: 1000 }
